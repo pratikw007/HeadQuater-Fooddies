@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400&display=swap');
+
+:root{
+   --main-color:#2B1103;
+   --sub-color:#DCC69C;
+   --white:#fff;
+   --border:.1rem solid rgba(220, 198, 156, .3);
+}
+
+*{
+   font-family: 'Montserrat', sans-serif;
+   margin: 0; padding: 0;
+   box-sizing: border-box;
+   outline: none; border: none;
+   text-decoration: none;
+}
+
+*::selection{
+   background-color: var(--sub-color);
+   color: var(--main-color);
+}
+
+*::-webkit-scrollbar{
+   height: .5rem;
+   width: 1rem;
+}
+
+*::-webkit-scrollbar-track{
+   background-color: transparent;
+}
+
+*::-webkit-scrollbar-thumb{
+   background-color: var(--sub-color);
+   border-radius: 5rem;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 2rem;   
+}
+body{
+    background-color: #2B1103;
+}
+section{
+    padding: 3rem 2rem;
+    max-width: 1200px;
+    margin-block-end: 0 auto;
+}
+.btn{
+    display: inline-block;
+    cursor: pointer;
+    padding: 1rem 3rem;
+    border: var(--border);
+    font-size: 1.8rem;
+    color: var(--sub-color);
+    text-align: center;
+    text-transform: capitalize;
+    transition: .2s linear;
+    margin-top: 1rem;
+}
+.btn:hover{
+    border-radius: 5rem;
+    background-color: var(--sub-color);
+    color: var(--main-color);
+}
+.header  .flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+}
+
+.header .flex .logo{ 
+        color: var(--sub-color);
+        font-size: 2.5rem;
+}
+
+.header .flex .btn{
+     margin-top: 0;
+}
+
+.header .flex .fa-bars{
+    font-size: 3rem;
+    cursor: pointer;
+    color: var(--sub-color);
+    display: none;
+}
+
+.header .navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+    margin-top: 2rem;
+    background-color: var(--sub-color);
+    padding: 1rem;
+    border-radius: .5rem;
+}
+.header .navbar.a{  
+    font-size: 1.8rem;
+    color: var(--main-color);
+    padding: 1rem 3rem;
+    border-radius: .5rem;
+}
+
+.header .navbar.a:hover{
+     background-color: var(--main-color);
+     column: var(--sub-color);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media Queries */
+@media (max-width:991px){
+    html{
+        font-size: 55%;
+    }
+    .header .flex  .fa-bars{
+        display: inline-block;
+    }
+
+    .header.flex .btn{
+        display: none;
+    }
+    .header .navbar{
+        flex-flow: column;
+        padding: 2rem;
+    }
+}
+@media (max-width:768px){
+    
+    }
+}
+@media (max-width:450px){
+    html{
+        font-size: 50%;
+    }
+}
+
+
+
+
+
+/* Day - 01  13.07 */
